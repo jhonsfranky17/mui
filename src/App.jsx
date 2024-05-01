@@ -22,24 +22,28 @@ const App = () => {
         borderBottom={1}
         borderColor="gray"
       >
-        <Link underline="none" href="#">
+        <Link fontSize={11} href="#">
           HOME
         </Link>
-        <Link underline="none" href="#">
+        <Link fontSize={11} color="secondary" underline="none" href="#">
           ABOUT US
         </Link>
-        <Link underline="none" href="#">
+        <Link fontSize={11} color="secondary" underline="none" href="#">
           SERVICES
         </Link>
         <div>
           <Button
+            sx={{
+              fontSize: "11px",
+            }}
             id="basic-button"
             aria-controls={open ? "basic-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
+            color="secondary"
           >
-            PAGES <KeyboardArrowDownIcon />
+            PAGES <KeyboardArrowDownIcon fontSize="small" />
           </Button>
           <Menu
             id="basic-menu"
@@ -55,7 +59,9 @@ const App = () => {
             <MenuItem onClick={handleClose}>JOB</MenuItem>
           </Menu>
         </div>
-        <Button variant="outlined">CONTACT US</Button>
+        <Button size="small" fontSize="small" variant="outlined">
+          CONTACT US
+        </Button>
       </Box>
     </>
   );
