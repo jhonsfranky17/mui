@@ -4,7 +4,6 @@ import App from "./App.jsx";
 import "./index.css";
 import { ThemeProvider } from "@mui/material";
 import theme from "../material.config.js";
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
